@@ -180,7 +180,7 @@
         }
 
         #thumb-image {
-            width: 100px !important;
+            // width: 100px !important;
             height: 98px !important;
         }
 
@@ -295,4 +295,124 @@
         }
 
     }
+}
+
+@media screen and (max-width: 576px) {
+      // modal new arrival
+
+  #exampleModal {
+    .gallery-top {
+      height: auto !important;
+    }
+
+    .modal-body {
+      padding: 10px 8px;
+    }
+
+    .gallery-thumbs {
+      padding-top: 10px;
+      justify-content: center;
+    }
+
+    .modal-content {
+      height: 200vh !important;
+    }
+
+    .modal-dialog {
+      width: 95% !important;
+    }
+
+    .swiper-modal {
+      flex-direction: column;
+      height: 100vh !important;
+    }
+
+    #main-image {
+      width: 98% !important;
+      height: 350px !important;
+      margin-right: 19px !important;
+    }
+
+    .modal-body {
+      .modal-wrapper {
+        padding: 0 1%;
+      }
+    }
+
+    #thumb-image {
+      max-width: 17.8% !important;
+      height: 76px !important;
+    }
+
+    .modal__index {
+      position: relative;
+
+      .close-btn {
+        position: absolute;
+        top: -67%;
+        right: 4%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    // modal new arrival
+
+#exampleModal {
+    height: 100vh !important;
+
+  .gallery-top {
+    height: auto !important;
+  }
+
+  .modal-body {
+    padding: 10px 8px;
+  }
+
+  .gallery-thumbs {
+    padding-top: 10px;
+    justify-content: center;
+  }
+
+  .modal-content {
+    height: 200vh !important;
+  }
+
+  .modal-dialog {
+    width: 95% !important;
+  }
+
+  .swiper-modal {
+    flex-direction: column;
+    height: 100vh !important;
+  }
+
+  #main-image {
+    width: 100% !important;
+    height: 566px !important;
+    margin-right: 10px !important;
+  }
+
+  .modal-body {
+    .modal-wrapper {
+      padding: 0 1%;
+    }
+  }
+
+  #thumb-image {
+    max-width: 18.8% !important;
+    height: 76px !important;
+  }
+
+  .modal__index {
+    position: relative;
+
+    .close-btn {
+      position: absolute;
+      top: -106%;
+      right: 2%;
+    }
+  }
+}
 }

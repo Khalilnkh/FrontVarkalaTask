@@ -149,7 +149,6 @@
   height: 550px;
 }
 .modal-dialog .modal-body #thumb-image {
-  width: 100px !important;
   height: 98px !important;
 }
 .modal-dialog .modal-body .modal-wrapper {
@@ -229,4 +228,92 @@
 }
 .modal-dialog .modal-body .bottom-wrapper a:hover {
   text-decoration: underline !important;
+}
+
+@media screen and (max-width: 576px) {
+  #exampleModal .gallery-top {
+    height: auto !important;
+  }
+  #exampleModal .modal-body {
+    padding: 10px 8px;
+  }
+  #exampleModal .gallery-thumbs {
+    padding-top: 10px;
+    justify-content: center;
+  }
+  #exampleModal .modal-content {
+    height: 200vh !important;
+  }
+  #exampleModal .modal-dialog {
+    width: 95% !important;
+  }
+  #exampleModal .swiper-modal {
+    flex-direction: column;
+    height: 100vh !important;
+  }
+  #exampleModal #main-image {
+    width: 98% !important;
+    height: 350px !important;
+    margin-right: 19px !important;
+  }
+  #exampleModal .modal-body .modal-wrapper {
+    padding: 0 1%;
+  }
+  #exampleModal #thumb-image {
+    max-width: 17.8% !important;
+    height: 76px !important;
+  }
+  #exampleModal .modal__index {
+    position: relative;
+  }
+  #exampleModal .modal__index .close-btn {
+    position: absolute;
+    top: -67%;
+    right: 4%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #exampleModal {
+    height: 100vh !important;
+  }
+  #exampleModal .gallery-top {
+    height: auto !important;
+  }
+  #exampleModal .modal-body {
+    padding: 10px 8px;
+  }
+  #exampleModal .gallery-thumbs {
+    padding-top: 10px;
+    justify-content: center;
+  }
+  #exampleModal .modal-content {
+    height: 200vh !important;
+  }
+  #exampleModal .modal-dialog {
+    width: 95% !important;
+  }
+  #exampleModal .swiper-modal {
+    flex-direction: column;
+    height: 100vh !important;
+  }
+  #exampleModal #main-image {
+    width: 100% !important;
+    height: 566px !important;
+    margin-right: 10px !important;
+  }
+  #exampleModal .modal-body .modal-wrapper {
+    padding: 0 1%;
+  }
+  #exampleModal #thumb-image {
+    max-width: 18.8% !important;
+    height: 76px !important;
+  }
+  #exampleModal .modal__index {
+    position: relative;
+  }
+  #exampleModal .modal__index .close-btn {
+    position: absolute;
+    top: -106%;
+    right: 2%;
+  }
 }/*# sourceMappingURL=modal.css.map */
