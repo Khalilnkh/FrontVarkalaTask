@@ -91,7 +91,7 @@ $(document).ready(function(){
                             <img class="product-front" src="${item.productImage}" alt="Image">
                         </div>
                         <div class="card-info">
-                            <a class="title product-name">${item.productName}</a>
+                            <a class="title link product-name">${item.productName}</a>
                             <p class="quantity">Quantity: ${item.quantity}</p>
                             <strong class="price product-price">${item.productPrice}</strong>
                         </div>

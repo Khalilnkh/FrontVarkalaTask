@@ -1,3 +1,28 @@
+
+const swiper01 = new Swiper('#swiper-brand', {
+  loop: true,
+  slidesPerView: 5,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: 'true',
+    dynamicBullets: true
+  },
+  breakpoints: {
+      768: {
+          slidesPerView: 2,
+          spaceBetween: 30
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      1200: {
+        slidesPerView: 5,
+      },
+  }
+});
+
+
 var swiper = new Swiper('.swiper-container.swiper-one', {
   loop: true,
   speed: '1450',
@@ -5,14 +30,14 @@ var swiper = new Swiper('.swiper-container.swiper-one', {
   parallax: true,
   pagination: {
     el: '.swiper-pagination',
-    clickable: 'true'
+    clickable: 'true',
+    dynamicBullets: true
   },
-  //   autoplay: {
-  //     delay: 6500,
-  //  },
+    autoplay: {
+      delay: 6500,
+   },
 });
 
-AOS.init()
 
 
 // breakpoints: {
@@ -40,3 +65,4 @@ var galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs
   }
 });
+

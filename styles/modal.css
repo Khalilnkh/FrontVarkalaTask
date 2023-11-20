@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .modal-dialog {
   width: 75% !important;
   max-width: 100% !important;
@@ -133,8 +134,21 @@
   height: 750px;
 }
 .modal-dialog .modal-body .close-btn {
-  text-align: right;
+  display: flex;
+  justify-content: end;
   width: 100%;
+}
+.modal-dialog .modal-body .close-btn span {
+  font-size: 0;
+}
+.modal-dialog .modal-body .btn-close {
+  display: block;
+  width: 20px; /* Örnek olarak genişlik */
+  height: 20px; /* Örnek olarak yükseklik */
+  transition: transform 0.3s ease; /* Dönme efektinin süresi ve geçiş türü */
+}
+.modal-dialog .modal-body .btn-close:hover {
+  transform: rotate(180deg);
 }
 .modal-dialog .modal-body #main-image {
   width: 538px !important;
@@ -144,9 +158,35 @@
 }
 .modal-dialog .modal-body #thumb-image {
   background-size: cover;
+  width: 99.75px !important;
 }
 .modal-dialog .modal-body .gallery-top {
+  position: relative;
   height: 550px;
+}
+.modal-dialog .modal-body .gallery-top .badge {
+  position: absolute;
+  top: 3%;
+  left: 17px;
+  right: 0;
+  width: 51px;
+  z-index: 111;
+  display: inline-block;
+  padding: 5px 5px;
+  color: #000;
+  background-color: #bcac76;
+}
+.modal-dialog .modal-body .gallery-top .badge-dark {
+  position: absolute;
+  top: 12%;
+  left: 17px;
+  right: 0;
+  width: 45px;
+  z-index: 111;
+  display: inline-block;
+  padding: 5px 5px;
+  color: #fff;
+  background-color: #000;
 }
 .modal-dialog .modal-body #thumb-image {
   height: 98px !important;
@@ -195,7 +235,8 @@
   color: #fff;
   padding: 10px 20px;
 }
-.modal-dialog .modal-body .social-category .wish-list i, .modal-dialog .modal-body .social-category .wish-list a {
+.modal-dialog .modal-body .social-category .wish-list i,
+.modal-dialog .modal-body .social-category .wish-list a {
   cursor: pointer;
   color: #bcac76 !important;
 }
@@ -252,15 +293,15 @@
     height: 100vh !important;
   }
   #exampleModal #main-image {
-    width: 98% !important;
+    width: 100% !important;
     height: 350px !important;
-    margin-right: 19px !important;
+    margin-right: 10px !important;
   }
   #exampleModal .modal-body .modal-wrapper {
     padding: 0 1%;
   }
   #exampleModal #thumb-image {
-    max-width: 17.8% !important;
+    max-width: 18.8% !important;
     height: 76px !important;
   }
   #exampleModal .modal__index {
@@ -268,7 +309,7 @@
   }
   #exampleModal .modal__index .close-btn {
     position: absolute;
-    top: -67%;
+    top: -65%;
     right: 4%;
   }
 }
@@ -307,13 +348,59 @@
   #exampleModal #thumb-image {
     max-width: 18.8% !important;
     height: 76px !important;
+    width: 133.75px !important;
   }
   #exampleModal .modal__index {
     position: relative;
   }
   #exampleModal .modal__index .close-btn {
     position: absolute;
-    top: -106%;
+    top: -102%;
+    right: 2%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #exampleModal {
+    height: 100vh !important;
+  }
+  #exampleModal .gallery-top {
+    height: auto !important;
+  }
+  #exampleModal .modal-body {
+    padding: 10px 8px;
+  }
+  #exampleModal .gallery-thumbs {
+    padding-top: 10px;
+    justify-content: center;
+  }
+  #exampleModal .modal-content {
+    height: 208vh !important;
+  }
+  #exampleModal .modal-dialog {
+    width: 56% !important;
+  }
+  #exampleModal .swiper-modal {
+    flex-direction: column;
+    height: 100vh !important;
+  }
+  #exampleModal #main-image {
+    width: 100% !important;
+    height: 566px !important;
+    margin-right: 10px !important;
+  }
+  #exampleModal .modal-body .modal-wrapper {
+    padding: 0 1%;
+  }
+  #exampleModal #thumb-image {
+    max-width: 18.8% !important;
+    height: 76px !important;
+  }
+  #exampleModal .modal__index {
+    position: relative;
+  }
+  #exampleModal .modal__index .close-btn {
+    position: absolute;
+    top: -101%;
     right: 2%;
   }
 }/*# sourceMappingURL=modal.css.map */

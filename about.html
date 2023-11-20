@@ -72,7 +72,7 @@
         </div>
     </div>
 
-    <header class="header-index about">
+    <header class="header-index">
         <div class="container-flex">
             <div class="header-index pt-3 d-flex justify-content-between align-items-center">
                 <div class="header-base">
@@ -254,17 +254,17 @@
                                                 alt="Profile image">
                                             <div class="profile-content">
                                                 <h6>Homepage</h6>
-                                                <li><a href="#">Home 1 - Fashion</a></li>
-                                                <li><a href="#">Home 2 - Fashion</a></li>
+                                                <li><a href="/index.html">Home 1 - Fashion</a></li>
+                                                <li><a href="/index.html">Home 2 - Fashion</a></li>
                                                 <li>
-                                                    <a href="#">Home 3 - Design
+                                                    <a href="/index.html">Home 3 - Design
                                                         <span class="badge">
                                                             New
                                                         </span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/index.html">
                                                         Home 4 - Design
                                                         <span class="badge">
                                                             New
@@ -473,7 +473,7 @@
                     </div>
                     <div class="cart-item item wrapper">
                         <i class="fa-solid fa-shop"></i>
-                        <span class="badge-number">3</span>
+                        <span class="badge-number"></span>
                     </div>
                     <div class="drawer-menu wrapper">
                         <i class="fa-solid fa-bars"></i>
@@ -483,7 +483,7 @@
                         <div class="overlay"></div>
                         <nav class="nav">
                             <div class="header-wrapper">
-                                <div data-aos="zoom-in" class="aos-init aos-animate">
+                                <div>
                                     <button class="xmark">
                                         <i class="fa-solid fa-xmark"></i>
                                     </button>
@@ -492,9 +492,9 @@
                             <div class="body-wrapper">
 
                                 <h5>Varkala</h5>
-                                <ul class="list-menu">
+                                <ul class="list-menu-item list-unstyled pl-0">
                                     <li>
-                                        <a href="#">
+                                        <a href="/index.html">
                                             Home
                                         </a>
                                     </li>
@@ -509,33 +509,45 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            Dropdown link
-                                        </a>
+                                        <nav class="dropdown-navigation" role='navigation'>
+                                            <div class="dropdown">
+                                                <button onclick="myFunction()" id="dropbtn" class="dropbtn">
+                                                    Dropdown link
+                                                    <i id="arrowIcon" class="fa-solid fa-chevron-down"></i>
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#">Action</a>
+                                                  <a href="#">Another action</a>
+                                                  <a href="#">Something else here</a>
+                                                </div>
+                                              </div>
+                                          </nav>  
                                     </li>
                                 </ul>
 
-                                <div class="main-wrapper d-flex align-items-center">
-                                    <div class="social-logo">
-                                        <a href="#">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
+                                <div id="bottom-content" class="bottom-content">
+                                    <div id="main-wrapper" class="main-wrapper d-flex align-items-center">
+                                        <div class="social-logo">
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="phone d-flex align-items-center">
+                                            <a href="#">
+                                                <i class="fa-solid fa-phone"></i>
+                                            </a>
+                                            <p style="margin-left: 5px;">020-800-456-747</p>
+                                        </div>
                                     </div>
-                                    <div class="phone d-flex align-items-center">
-                                        <a href="#">
-                                            <i class="fa-solid fa-phone"></i>
-                                        </a>
-                                        <p style="margin-left: 5px;">020-800-456-747</p>
-                                    </div>
+    
+                                    <p class="text-sm base-color">
+                                        Samsa was a travelling salesman - and above it there hung a picture that he had
+                                        recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+                                    </p>
                                 </div>
-
-                                <p class="text-sm base-color">
-                                    Samsa was a travelling salesman - and above it there hung a picture that he had
-                                    recently cut out of an illustrated magazine and housed in a nice, gilded frame.
-                                </p>
                             </div>
                         </nav>
                     </div>
@@ -544,7 +556,7 @@
                         <div class="overlay-2"></div>
                         <nav class="nav-2">
                             <div class="header-wrapper">
-                                <div data-aos="zoom-in" class="aos-init aos-animate">
+                                <div>
                                     <button class="xmark">
                                         <i class="fa-solid fa-xmark"></i>
                                     </button>
@@ -553,62 +565,6 @@
                             <div class="body-wrapper">
 
                                 <ul class="list-menu">
-                                    <li>
-                                        <a class="card-item" href="#">
-                                            <div class="card-thumbail">
-                                                <img src="/assets/products/1.jpg" alt="Image">
-                                            </div>
-                                            <div class="card-info">
-                                                <span class="title">Skull Tee</span>
-                                                <p class="quantity">Quantity: 1</p>
-                                                <span class="price">$75.00</span>
-                                            </div>
-                                        </a>
-                                        <a class="card-item" href="#">
-                                            <div class="card-thumbail">
-                                                <img src="/assets/products/2.jpg" alt="Image">
-                                            </div>
-                                            <div class="card-info">
-                                                <span class="title">Skull Tee</span>
-                                                <p class="quantity">Quantity: 1</p>
-                                                <span class="price">$75.00</span>
-                                            </div>
-                                            <div id="del-card" class="del-card">
-                                                &times;
-                                            </div>
-                                        </a>
-                                        <a class="card-item" href="#">
-                                            <div class="card-thumbail">
-                                                <img src="/assets/products/2.jpg" alt="Image">
-                                            </div>
-                                            <div class="card-info">
-                                                <span class="title">Skull Tee</span>
-                                                <p class="quantity">Quantity: 1</p>
-                                                <span class="price">$75.00</span>
-                                            </div>
-                                        </a>
-                                        <a class="card-item" href="#">
-                                            <div class="card-thumbail">
-                                                <img src="/assets/products/2.jpg" alt="Image">
-                                            </div>
-                                            <div class="card-info">
-                                                <span class="title">Skull Tee</span>
-                                                <p class="quantity">Quantity: 1</p>
-                                                <span class="price">$75.00</span>
-                                            </div>
-                                        </a>
-                                        <a class="card-item" href="#">
-                                            <div class="card-thumbail">
-                                                <img src="/assets/products/1.jpg" alt="Image">
-                                            </div>
-                                            <div class="card-info">
-                                                <span class="title">Skull Tee</span>
-                                                <p class="quantity">Quantity: 1</p>
-                                                <span class="price">$75.00</span>
-                                            </div>
-                                        </a>
-                                    </li>
-
                                 </ul>
 
                             </div>
@@ -616,10 +572,8 @@
                                 <div class="modal-footer sidebar-cart-footer shadow">
                                     <div class="price-total w-100">
                                         <h5 class="mb-4">Subtotal: <span class="float-right">$465.32</span></h5>
-                                        <a class="btn btn-outline-dark btn-block mb-3 w-100" href="cart.html">View
-                                            cart</a>
-                                        <a class="btn btn-dark btn-block w-100 text-white"
-                                            href="checkout.html">Checkout</a>
+                                        <a class="btn-block mb-3 w-100 cart" href="#">View cart</a>
+                                        <a class="btn-block w-100 text-white checkout" href="#">Checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -685,13 +639,13 @@
                                 <li class="item">
                                     <a class="sub-btn"></i>Pages<i class="fa-solid fa-chevron-down"></i></a>
                                     <div class="sub-menu">
-                                        <a href="#" class="title">Homepage</a>
-                                        <a href="#" class="sub-item">Home 1 - Fashion</a>
-                                        <a href="#" class="sub-item">Home 2 - Fashion</a>
-                                        <a href="#" class="sub-item">Home 3 - Design
+                                        <a href="/index.html" class="title">Homepage</a>
+                                        <a href="/index.html" class="sub-item">Home 1 - Fashion</a>
+                                        <a href="/index.html" class="sub-item">Home 2 - Fashion</a>
+                                        <a href="/index.html" class="sub-item">Home 3 - Design
                                             <span class="badge">New</span>
                                         </a>
-                                        <a href="#" class="sub-item">Home 4 - Design
+                                        <a href="/index.html" class="sub-item">Home 4 - Design
                                             <span class="badge">New</span>
                                         </a>
 
@@ -728,24 +682,24 @@
                                         <a href="#" class="sub-item">Product standard</a>
 
 
-                                        <a href="#" class="title">Blog</a>
-                                        <a href="#" class="sub-item">Blog</a>
-                                        <a href="#" class="sub-item">Blog - Masonry</a>
-                                        <a href="#" class="sub-item">Post</a>
+                                        <a href="/blog.html" class="title">Blog</a>
+                                        <a href="/blog.html" class="sub-item">Blog</a>
+                                        <a href="/blog.html" class="sub-item">Blog - Masonry</a>
+                                        <a href="/blog.html" class="sub-item">Post</a>
 
 
                                         <a href="#" class="title">Pages</a>
-                                        <a href="#" class="sub-item">About - Company
+                                        <a href="/about.html" class="sub-item">About - Company
                                             <span class="badge">New</span>
                                         </a>
                                         <span class="badge">New</span>
-                                        <a href="#" class="sub-item">About v2 - Person
+                                        <a href="/about.html" class="sub-item">About v2 - Person
                                             <span class="badge">New</span>
                                         </a>
                                         <a href="#" class="sub-item">F.A.Q.
                                             <span class="badge">New</span>
                                         </a>
-                                        <a href="#" class="sub-item">Contact</a>
+                                        <a href="/contact.html" class="sub-item">Contact</a>
                                         <a href="#" class="sub-item">Privacy policy
                                             <span class="badge">New</span>
                                         </a>
@@ -870,7 +824,7 @@
     <section class="py-6 bg-gray-100">
         <div class="container">
             <div class="row">
-                <div class="about-center d-flex flex-wrap">
+                <div class="about-center d-flex">
                     <div class="col-lg-5 col-md-12">
                         <h2 class="mb-4">Varkala's Milestones</h2>
                         <p class="text-lg text-muted mb-5 mb-lg-0">One morning, when Gregor Samsa woke from troubled dreams,
@@ -1519,6 +1473,7 @@
     <script src="script/drawer.js"></script>
     <script src="script/index.js"></script>
     <script src="script/swiper.js"></script>
+    <script src="script/cart.js"></script>
     <script src="script/dropdown.js"></script>
 </body>
 

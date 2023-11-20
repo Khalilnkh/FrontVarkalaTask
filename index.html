@@ -24,8 +24,12 @@
             <div class="wrapper d-flex align-items-center justify-content-between">
                 <div class="main-wrapper d-flex">
                     <div class="logo">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-twitter"></i>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
                     </div>
                     <div class="phone d-flex align-items-center">
                         <i class="fa-solid fa-phone"></i>
@@ -42,18 +46,9 @@
                             <i class="fa-solid fa-chevron-down"></i>
                         </a>
                         <nav class="cd-dropdown">
-                            <h2>Title</h2>
-                            <a href="#0" class="cd-close">Close</a>
                             <ul class="cd-dropdown-content">
-                                <li>
-                                    <form class="cd-search">
-                                        <input type="search" placeholder="Search...">
-                                    </form>
-                                </li>
-
-                                <li><a href="https://codyhouse.co/?p=748">Page 1</a></li>
-                                <li><a href="https://codyhouse.co/?p=748">Page 2</a></li>
-                                <li><a href="https://codyhouse.co/?p=748">Page 3</a></li>
+                                <li><a href="#">German</a></li>
+                                <li><a href="#">French</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -63,18 +58,9 @@
                             <i class="fa-solid fa-chevron-down"></i>
                         </a>
                         <nav class="cd-dropdown">
-                            <h2>Title</h2>
-                            <a href="#0" class="cd-close">Close</a>
                             <ul class="cd-dropdown-content">
-                                <li>
-                                    <form class="cd-search">
-                                        <input type="search" placeholder="Search...">
-                                    </form>
-                                </li>
-
-                                <li><a href="https://codyhouse.co/?p=748">Page 1</a></li>
-                                <li><a href="https://codyhouse.co/?p=748">Page 2</a></li>
-                                <li><a href="https://codyhouse.co/?p=748">Page 3</a></li>
+                                <li><a href="#">EUR</a></li>
+                                <li><a href="#">GBP</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -83,15 +69,15 @@
         </div>
     </div>
 
-    <!-- <div class="elements-style">
+    <div class="elements-style">
         <img class="element" src="/assets/shape.png" alt="shape">
-    </div> -->
+    </div>
 
     <header class="header-index">
         <div class="container-flex">
             <div class="header-index pt-3 d-flex justify-content-between align-items-center">
                 <div class="header-base">
-                    <a href="#" class="brand">Varkala</a>
+                    <a href="index.html" class="brand">Varkala</a>
                     <div class="cd-dropdown-wrapper">
                         <a class="cd-dropdown-trigger" id="active" href="#1" data-id="dropdown-3">
                             Home
@@ -259,7 +245,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
                         </a>
                         <nav id="profile-wrapper" class="cd-dropdown  profile-wrapper">
-                                <div class="test">
+                            <div class="test">
                                 <h2>Title</h2>
                                 <a href="#0" class="cd-close">Close</a>
                                 <ul class="cd-dropdown-content row">
@@ -269,17 +255,17 @@
                                                 alt="Profile image">
                                             <div class="profile-content">
                                                 <h6>Homepage</h6>
-                                                <li><a href="#">Home 1 - Fashion</a></li>
-                                                <li><a href="#">Home 2 - Fashion</a></li>
+                                                <li><a href="/index.html">Home 1 - Fashion</a></li>
+                                                <li><a href="/index.html">Home 2 - Fashion</a></li>
                                                 <li>
-                                                    <a href="#">Home 3 - Design
+                                                    <a href="/index.html">Home 3 - Design
                                                         <span class="badge">
                                                             New
                                                         </span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/index.html">
                                                         Home 4 - Design
                                                         <span class="badge">
                                                             New
@@ -442,7 +428,7 @@
                                     </div>
                                 </ul>
                             </div>
-                            </nav>
+                        </nav>
                     </div>
                     <div class="cd-dropdown-wrapper">
                         <a class="cd-dropdown-trigger" href="#1" data-id="dropdown-7">
@@ -488,7 +474,7 @@
                     </div>
                     <div class="cart-item item wrapper">
                         <i class="fa-solid fa-shop"></i>
-                        <span class="badge-number">3</span>
+                        <span class="badge-number"></span>
                     </div>
                     <div class="drawer-menu wrapper">
                         <i class="fa-solid fa-bars"></i>
@@ -507,9 +493,9 @@
                             <div class="body-wrapper">
 
                                 <h5>Varkala</h5>
-                                <ul class="list-menu">
+                                <ul class="list-menu-item list-unstyled pl-0">
                                     <li>
-                                        <a href="#">
+                                        <a href="/index.html">
                                             Home
                                         </a>
                                     </li>
@@ -524,27 +510,45 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            Dropdown link
-                                        </a>
+                                        <nav class="dropdown-navigation" role='navigation'>
+                                            <div class="dropdown">
+                                                <button onclick="myFunction()" id="dropbtn" class="dropbtn">
+                                                    Dropdown link
+                                                    <i id="arrowIcon" class="fa-solid fa-chevron-down"></i>
+                                                </button>
+                                                <div id="myDropdown" class="dropdown-content">
+                                                  <a href="#">Action</a>
+                                                  <a href="#">Another action</a>
+                                                  <a href="#">Something else here</a>
+                                                </div>
+                                              </div>
+                                          </nav>  
                                     </li>
                                 </ul>
 
-                                <div class="main-wrapper d-flex align-items-center">
-                                    <div class="social-logo">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                        <i class="fa-brands fa-twitter"></i>
+                                <div id="bottom-content" class="bottom-content">
+                                    <div id="main-wrapper" class="main-wrapper d-flex align-items-center">
+                                        <div class="social-logo">
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="phone d-flex align-items-center">
+                                            <a href="#">
+                                                <i class="fa-solid fa-phone"></i>
+                                            </a>
+                                            <p style="margin-left: 5px;">020-800-456-747</p>
+                                        </div>
                                     </div>
-                                    <div class="phone d-flex align-items-center">
-                                        <i class="fa-solid fa-phone"></i>
-                                        <p style="margin-left: 5px;">020-800-456-747</p>
-                                    </div>
+    
+                                    <p class="text-sm base-color">
+                                        Samsa was a travelling salesman - and above it there hung a picture that he had
+                                        recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+                                    </p>
                                 </div>
-
-                                <p class="text-sm base-color">
-                                    Samsa was a travelling salesman - and above it there hung a picture that he had
-                                    recently cut out of an illustrated magazine and housed in a nice, gilded frame.
-                                </p>
                             </div>
                         </nav>
                     </div>
@@ -562,62 +566,6 @@
                             <div class="body-wrapper">
 
                                 <ul class="list-menu">
-                                    <li>
-                                        <a class="card-item" href="#">
-                                            <div class="card-thumbail">
-                                                <img src="/assets/products/1.jpg" alt="Image">
-                                            </div>
-                                            <div class="card-info">
-                                                <span class="title">Skull Tee</span>
-                                                <p class="quantity">Quantity: 1</p>
-                                                <span class="price">$75.00</span>
-                                            </div>
-                                        </a>
-                                        <a class="card-item" href="#">
-                                            <div class="card-thumbail">
-                                                <img src="/assets/products/2.jpg" alt="Image">
-                                            </div>
-                                            <div class="card-info">
-                                                <span class="title">Skull Tee</span>
-                                                <p class="quantity">Quantity: 1</p>
-                                                <span class="price">$75.00</span>
-                                            </div>
-                                            <div id="del-card" class="del-card">
-                                                &times;
-                                            </div>
-                                        </a>
-                                        <a class="card-item" href="#">
-                                            <div class="card-thumbail">
-                                                <img src="/assets/products/2.jpg" alt="Image">
-                                            </div>
-                                            <div class="card-info">
-                                                <span class="title">Skull Tee</span>
-                                                <p class="quantity">Quantity: 1</p>
-                                                <span class="price">$75.00</span>
-                                            </div>
-                                        </a>
-                                        <a class="card-item" href="#">
-                                            <div class="card-thumbail">
-                                                <img src="/assets/products/2.jpg" alt="Image">
-                                            </div>
-                                            <div class="card-info">
-                                                <span class="title">Skull Tee</span>
-                                                <p class="quantity">Quantity: 1</p>
-                                                <span class="price">$75.00</span>
-                                            </div>
-                                        </a>
-                                        <a class="card-item" href="#">
-                                            <div class="card-thumbail">
-                                                <img src="/assets/products/1.jpg" alt="Image">
-                                            </div>
-                                            <div class="card-info">
-                                                <span class="title">Skull Tee</span>
-                                                <p class="quantity">Quantity: 1</p>
-                                                <span class="price">$75.00</span>
-                                            </div>
-                                        </a>
-                                    </li>
-
                                 </ul>
 
                             </div>
@@ -625,10 +573,8 @@
                                 <div class="modal-footer sidebar-cart-footer shadow">
                                     <div class="price-total w-100">
                                         <h5 class="mb-4">Subtotal: <span class="float-right">$465.32</span></h5>
-                                        <a class="btn btn-outline-dark btn-block mb-3 w-100" href="cart.html">View
-                                            cart</a>
-                                        <a class="btn btn-dark btn-block w-100 text-white"
-                                            href="checkout.html">Checkout</a>
+                                        <a class="btn-block mb-3 w-100 cart" href="#">View cart</a>
+                                        <a class="btn-block w-100 text-white checkout" href="#">Checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -636,9 +582,6 @@
                     </div>
                 </div>
                 <div class="dropdown__menu-mb">
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                        <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
-                    </svg> -->
                     <div class="drawer-mb">
                         <header class="header">
                             <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -647,57 +590,63 @@
                                 <li class="item">
                                     <a class="sub-btn"></i>Home<i class="fa-solid fa-chevron-down dropdown"></i></a>
                                     <div class="sub-menu">
-                                      <a href="#" class="sub-item">Home 1 - Fashion</a>
-                                      <a href="#" class="sub-item">Home 2 - Fashion</a>
-                                      <a href="#" class="sub-item">
-                                        Home 3 - Design
-                                        <span class="badge">New</span>
-                                      </a>
-                                      <a href="#" class="sub-item">
-                                        Home 4 - Design
-                                        <span class="badge">New</span>
-                                      </a>
+                                        <a href="#" class="sub-item">Home 1 - Fashion</a>
+                                        <a href="#" class="sub-item">Home 2 - Fashion</a>
+                                        <a href="#" class="sub-item">
+                                            Home 3 - Design
+                                            <span class="badge">New</span>
+                                        </a>
+                                        <a href="#" class="sub-item">
+                                            Home 4 - Design
+                                            <span class="badge">New</span>
+                                        </a>
                                     </div>
                                 </li>
                                 <li class="item">
                                     <a class="sub-btn"></i>Shop<i class="fa-solid fa-chevron-down"></i></a>
                                     <div class="sub-menu">
-                                      <a href="#" class="title">Shop pages</a>
-                                      <a href="#" class="sub-item">Shop pages</a>
-                                      <a href="#" class="sub-item">Full width</a>
-                                      <a href="#" class="sub-item">Full width with category menu</a>
-                                      <a href="#" class="sub-item">Fixed with</a>
-                                      <a href="#" class="sub-item">Fixed with & sidebar</a>
-                                      <a href="#" class="sub-item">
-                                        Fixed with & masonry layout
-                                        <span class="badge">New</span>
-                                     </a>
-                                      <a href="#" class="sub-item">Subcategories</a>
+                                        <a href="#" class="title">Shop pages</a>
+                                        <a href="#" class="sub-item">Shop pages</a>
+                                        <a href="#" class="sub-item">Full width</a>
+                                        <a href="#" class="sub-item">Full width with category menu</a>
+                                        <a href="#" class="sub-item">Fixed with</a>
+                                        <a href="#" class="sub-item">Fixed with & sidebar</a>
+                                        <a href="#" class="sub-item">
+                                            Fixed with & masonry layout
+                                            <span class="badge">New</span>
+                                        </a>
+                                        <a href="#" class="sub-item">Subcategories</a>
 
-                                      <a href="#" class="title">Product pages</a>
-                                      <a href="#" class="sub-item">Product with sticky info</a>
-                                      <a href="#" class="sub-item">Product with background</a>
-                                      <a href="#" class="sub-item">Product standard</a>
+                                        <a href="#" class="title">Product pages</a>
+                                        <a href="#" class="sub-item">Product with sticky info</a>
+                                        <a href="#" class="sub-item">Product with background</a>
+                                        <a href="#" class="sub-item">Product standard</a>
                                     </div>
                                 </li>
                                 <li class="item">
                                     <a class="sub-btn"></i>Icons<i class="fa-solid fa-chevron-down"></i></a>
                                     <div class="sub-menu">
-                                      <a href="#" class="sub-item">Sub Item 01</a>
-                                      <a href="#" class="sub-item">Sub Item 02</a>
-                                      <a href="#" class="sub-item">Sub Item 03</a>
+                                        <a href="#" class="sub-item">Introduction</a>
+                                        <a href="#" class="sub-item">Directory structure</a>
+                                        <a href="#" class="sub-item">Gulp</a>
+                                        <a href="#" class="sub-item">Customizing CSS</a>
+                                        <a href="#" class="sub-item">Credits</a>
+                                        <a href="#" class="sub-item">Changelog</a>
+                                        <hr />
+                                        <a href="#" class="sub-item">Bootstrap</a>
+                                        <a href="#" class="sub-item">Theme</a>
                                     </div>
                                 </li>
                                 <li class="item">
                                     <a class="sub-btn"></i>Pages<i class="fa-solid fa-chevron-down"></i></a>
                                     <div class="sub-menu">
-                                        <a href="#" class="title">Homepage</a>
-                                        <a href="#" class="sub-item">Home 1 - Fashion</a>
-                                        <a href="#" class="sub-item">Home 2 - Fashion</a>
-                                        <a href="#" class="sub-item">Home 3 - Design
+                                        <a href="/index.html" class="title">Homepage</a>
+                                        <a href="/index.html" class="sub-item">Home 1 - Fashion</a>
+                                        <a href="/index.html" class="sub-item">Home 2 - Fashion</a>
+                                        <a href="/index.html" class="sub-item">Home 3 - Design
                                             <span class="badge">New</span>
                                         </a>
-                                        <a href="#" class="sub-item">Home 4 - Design
+                                        <a href="/index.html" class="sub-item">Home 4 - Design
                                             <span class="badge">New</span>
                                         </a>
 
@@ -733,25 +682,25 @@
                                         <a href="#" class="sub-item">Product with background</a>
                                         <a href="#" class="sub-item">Product standard</a>
 
-                                        
-                                        <a href="#" class="title">Blog</a>
-                                        <a href="#" class="sub-item">Blog</a>
-                                        <a href="#" class="sub-item">Blog - Masonry</a>
-                                        <a href="#" class="sub-item">Post</a>
 
-                                                                                
+                                        <a href="/blog.html" class="title">Blog</a>
+                                        <a href="/blog.html" class="sub-item">Blog</a>
+                                        <a href="/blog.html" class="sub-item">Blog - Masonry</a>
+                                        <a href="/blog.html" class="sub-item">Post</a>
+
+
                                         <a href="#" class="title">Pages</a>
-                                        <a href="#" class="sub-item">About - Company
+                                        <a href="/about.html" class="sub-item">About - Company
                                             <span class="badge">New</span>
                                         </a>
-                                            <span class="badge">New</span>
-                                        <a href="#" class="sub-item">About v2 - Person
+                                        <span class="badge">New</span>
+                                        <a href="/about.html" class="sub-item">About v2 - Person
                                             <span class="badge">New</span>
                                         </a>
                                         <a href="#" class="sub-item">F.A.Q.
                                             <span class="badge">New</span>
                                         </a>
-                                        <a href="#" class="sub-item">Contact</a>
+                                        <a href="/contact.html" class="sub-item">Contact</a>
                                         <a href="#" class="sub-item">Privacy policy
                                             <span class="badge">New</span>
                                         </a>
@@ -779,35 +728,35 @@
                                             <span class="badge">New</span>
                                         </a>
 
-                                      </div>
+                                    </div>
                                 </li>
                                 <li class="item">
                                     <a class="sub-btn"></i>Docs<i class="fa-solid fa-chevron-down"></i></a>
                                     <div class="sub-menu">
-                                      <a href="#" class="sub-item">Introduction</a>
-                                      <a href="#" class="sub-item">Directory structure</a>
-                                      <a href="#" class="sub-item">Gulp</a>
-                                      <a href="#" class="sub-item">Customizing CSS</a>
-                                      <a href="#" class="sub-item">Credits</a>
-                                      <a href="#" class="sub-item">Changelog</a>
-                                      <hr/>
-                                      <a href="#" class="sub-item">Bootstrap</a>
-                                      <a href="#" class="sub-item">Theme</a>
+                                        <a href="#" class="sub-item">Introduction</a>
+                                        <a href="#" class="sub-item">Directory structure</a>
+                                        <a href="#" class="sub-item">Gulp</a>
+                                        <a href="#" class="sub-item">Customizing CSS</a>
+                                        <a href="#" class="sub-item">Credits</a>
+                                        <a href="#" class="sub-item">Changelog</a>
+                                        <hr />
+                                        <a href="#" class="sub-item">Bootstrap</a>
+                                        <a href="#" class="sub-item">Theme</a>
                                     </div>
                                 </li>
-                                    <form class="search__form d-lg-flex ml-auto my-4 my-lg-0">
-                                        <div class="input-group input-group-underlined">
-                                            <input class="form-controll" type="text" placeholder="Search" aria-label="Search"
-                                                aria-describedby="button-search">
-                                            <div class="input-group-append ml-0">
-                                                <button id="button-search" type="button">
-                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                </button>
-                                            </div>
+                                <form class="search__form d-lg-flex ml-auto my-4 my-lg-0">
+                                    <div class="input-group input-group-underlined">
+                                        <input class="form-controll" type="text" placeholder="Search"
+                                            aria-label="Search" aria-describedby="button-search">
+                                        <div class="input-group-append ml-0">
+                                            <button id="button-search" type="button">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
                                         </div>
-                                    </form>
+                                    </div>
+                                </form>
                             </ul>
-                          </header>
+                        </header>
                     </div>
                 </div>
             </div>
@@ -837,9 +786,9 @@
                 <div class="swiper-slide">
                     <div class="container home__wrapper">
                         <div class="col-sm-6 col-md-6 pt-5 pt-md-0" data-swiper-parallax="-500">
-                            <p class="subtitle letter-spacing-3 mb-3 text-dark font-weight-light">Our all-time
+                            <p class="subtitle letter-spacing-3 mb-3 text-dark">Our all-time
                                 favourites</p>
-                            <h2>Black &amp; White</h2>
+                            <h2 class="title mb-5">Black &amp; White</h2>
                             <p class="description mb-5">The bedding was hardly able to cover it and seemed ready to
                                 slide off any moment. His many legs, pit</p>
                             <a class="shopping-btn" href="#">Discover more</a>
@@ -855,13 +804,12 @@
                 <div class="swiper-slide">
                     <div class="container home__wrapper">
                         <div class="col-sm-6 col-md-6 pt-5 pt-md-0" data-swiper-parallax="-500">
-                            <p class="subtitle letter-spacing-3 mb-3 text-dark font-weight-light">Our all-time
+                            <p class="subtitle letter-spacing-3 mb-3 text-dark">Our all-time
                                 favourites</p>
-                            <h2>Boxxez</h2>
+                            <h2 class="title mb-5">Boxxez</h2>
                             <p class="description mb-5">The bedding was hardly able to cover it and seemed ready to
                                 slide off any moment. His many legs, pit</p>
-                                <a class="shopping-btn"
-                                href="#">Discover more</a>
+                            <a class="shopping-btn" href="#">Discover more</a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-12 image-based text-center position-relative">
                             <img class="img-fluid home-slider-image" data-swiper-parallax="-200"
@@ -907,7 +855,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-left right col-lg-8 col-md-8 col-12">
+                        <div class="item-left right col-lg-7 col-md-7 col-12">
                             <div class="absolute px-4 mt-3">
                                 <a class="text-dark" href="#">
                                     <h3>Norwegg<br>design<br>chair</h3>
@@ -942,7 +890,7 @@
                                     alt="book">
                             </div>
                         </div>
-                        <div class="item-bottom right col-lg-4 col-md-4 col-12" style="padding-top: 90px;">
+                        <div class="item-bottom right col-lg-4 col-md-4 col-12">
                             <div class="item-img">
                                 <img src="/assets/box-sq.jpg" alt="book">
                             </div>
@@ -962,8 +910,8 @@
                         </div>
                     </div>
                     <div class="item position-relative d-flex flex-wrap">
-                        <div class="item-bottom col-lg-4 col-md-4 col-12">
-                            <div class="item-img">
+                        <div class="item-bottom col-lg-3 col-md-3 col-12">
+                            <div class="item-img small">
                                 <img src="/assets/clock2-sq.jpg" alt="clock">
                             </div>
                             <div class="item-content">
@@ -1057,6 +1005,13 @@
 
 
     <section class="new-arrival">
+        
+        <div class="shape-main position-relative">
+            <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                <path fill="#f7efcb" d="M429.5,292.5Q385,345,342.5,384.5Q300,424,235.5,438.5Q171,453,136.5,396.5Q102,340,73,290Q44,240,69.5,187.5Q95,135,131.5,76.5Q168,18,232.5,41.5Q297,65,349,94Q401,123,437.5,181.5Q474,240,429.5,292.5Z" />
+            </svg>
+        </div>
+        
         <div class="container">
             <div class="row">
                 <h2>New Arrivals</h2>
@@ -1093,10 +1048,11 @@
                             </a>
                         </li>
                     </ul>
-                   <div>
-                    <a class="list-base" href="#">All products</a>
-                   </div>
+                    <div>
+                        <a class="list-base" href="#">All products</a>
+                    </div>
                 </div>
+
 
                 <div class="arrival-items">
                     <div class="col-xl-3 col-md-4 col-6">
@@ -1114,42 +1070,7 @@
                                     </div>
                                 </a>
                                 <div class="product-hover-overlay">
-                                    <a class="text-dark text-sm" href="#">Add to cart</a>
-                                    <div id="modal-item">
-                                        <a class="text-dark text-hover-primary mr-2" href="#">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </a>
-                                        <a class="text-dark text-hover-primary" data-bs-toggle="modal"
-                                            data-bs-target="#nzxtModal" href="#">
-                                            <i class="fa-solid fa-maximize"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="position-relative">
-                                <h3 class="text-base mb-1"><a class="text-dark" href="#">Clock</a></h3><span
-                                    class="text-gray-500 text-sm">$40.00</span>
-                                <div class="product-stars text-xs">
-                                    <i class="fa fa-star text-primary"></i>
-                                    <i class="fa fa-star text-primary"></i>
-                                    <i class="fa fa-star text-primary"></i>
-                                    <i class="fa fa-star text-muted"></i>
-                                    <i class="fa fa-star text-muted"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-6">
-                        <div class="product aos-init aos-animate" data-aos="zoom-in" data-aos-delay="0">
-                            <div class="product-image mb-md-3"><a href="#">
-                                    <div class="product-swap-image"><img class="img-fluid product-front"
-                                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/book.jpg"
-                                            alt="product"><img class="img-fluid"
-                                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/book-2.jpg"
-                                            alt="product"></div>
-                                </a>
-                                <div class="product-hover-overlay">
-                                    <a class="text-dark text-sm" href="#">Add to cart</a>
+                                    <a class="text-dark text-sm add-to-cart" href="#">Add to cart</a>
                                     <div id="modal-item">
                                         <a class="text-dark text-hover-primary mr-2" href="#">
                                             <i class="fa-regular fa-heart"></i>
@@ -1162,8 +1083,49 @@
                                 </div>
                             </div>
                             <div class="position-relative">
-                                <h3 class="text-base mb-1"><a class="text-dark" href="#">Clock</a></h3><span
-                                    class="text-gray-500 text-sm">$40.00</span>
+                                <h3 class="text-base mb-1">
+                                    <a class="text-dark product-name" href="#">Norwegg Chair</a>
+                                </h3>
+                                    <span class="text-gray-500 text-sm product-price">$40.00</span>
+                                <div class="product-stars text-xs">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-muted"></i>
+                                    <i class="fa fa-star text-muted"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-6">
+                        <div class="product aos-init aos-animate" data-aos="zoom-in" data-aos-delay="0">
+                            <div class="product-image mb-md-3">
+                                <a href="#">
+                                    <div class="product-swap-image">
+                                        <img class="img-fluid product-front"
+                                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/book.jpg"
+                                            alt="product"><img class="img-fluid"
+                                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/book-2.jpg"
+                                            alt="product"></div>
+                                </a>
+                                <div class="product-hover-overlay">
+                                    <a class="text-dark text-sm add-to-cart" href="#">Add to cart</a>
+                                    <div id="modal-item">
+                                        <a class="text-dark text-hover-primary mr-2" href="#">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                        <a class="text-dark text-hover-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" href="#">
+                                            <i class="fa-solid fa-maximize"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <h3 class="text-base mb-1">
+                                    <a class="text-dark product-name" href="#">Book</a>
+                                </h3>
+                                <span class="text-gray-500 text-sm product-price">$40.00</span>
                                 <div class="product-stars text-xs">
                                     <i class="fa fa-star text-primary"></i>
                                     <i class="fa fa-star text-primary"></i>
@@ -1185,7 +1147,7 @@
                                             alt="product"></div>
                                 </a>
                                 <div class="product-hover-overlay">
-                                    <a class="text-dark text-sm" href="#">Add to cart</a>
+                                    <a class="text-dark text-sm add-to-cart" href="#">Add to cart</a>
                                     <div id="modal-item">
                                         <a class="text-dark text-hover-primary mr-2" href="#">
                                             <i class="fa-regular fa-heart"></i>
@@ -1198,8 +1160,10 @@
                                 </div>
                             </div>
                             <div class="position-relative">
-                                <h3 class="text-base mb-1"><a class="text-dark" href="#">Clock</a></h3><span
-                                    class="text-gray-500 text-sm">$40.00</span>
+                                <h3 class="text-base mb-1">
+                                    <a class="text-dark product-name" href="#">Another chair</a>
+                                </h3>
+                                <span class="text-gray-500 text-sm product-price">$40.00</span>
                                 <div class="product-stars text-xs">
                                     <i class="fa fa-star text-primary"></i>
                                     <i class="fa fa-star text-primary"></i>
@@ -1221,7 +1185,7 @@
                                             alt="product"></div>
                                 </a>
                                 <div class="product-hover-overlay">
-                                    <a class="text-dark text-sm" href="#">Add to cart</a>
+                                    <a class="text-dark text-sm add-to-cart" href="#">Add to cart</a>
                                     <div id="modal-item">
                                         <a class="text-dark text-hover-primary mr-2" href="#">
                                             <i class="fa-regular fa-heart"></i>
@@ -1234,8 +1198,10 @@
                                 </div>
                             </div>
                             <div class="position-relative">
-                                <h3 class="text-base mb-1"><a class="text-dark" href="#">Clock</a></h3><span
-                                    class="text-gray-500 text-sm">$40.00</span>
+                                <h3 class="text-base mb-1">
+                                    <a class="text-dark product-name" href="#">Your new chair</a>
+                                </h3>
+                                <span class="text-gray-500 text-sm product-price">$40.00</span>
                                 <div class="product-stars text-xs">
                                     <i class="fa fa-star text-primary"></i>
                                     <i class="fa fa-star text-primary"></i>
@@ -1257,7 +1223,7 @@
                                             alt="product"></div>
                                 </a>
                                 <div class="product-hover-overlay">
-                                    <a class="text-dark text-sm" href="#">Add to cart</a>
+                                    <a class="text-dark text-sm add-to-cart" href="#">Add to cart</a>
                                     <div id="modal-item">
                                         <a class="text-dark text-hover-primary mr-2" href="#">
                                             <i class="fa-regular fa-heart"></i>
@@ -1271,8 +1237,9 @@
                             </div>
                             <div class="position-relative">
                                 <h3 class="text-base mb-1">
-                                    <a class="text-dark" href="#">Clock</a></h3>
-                                <span class="text-gray-500 text-sm">$40.00</span>
+                                    <a class="text-dark product-name" href="#">Flower marquee</a>
+                                </h3>
+                                <span class="text-gray-500 text-sm product-price">$40.00</span>
                                 <div class="product-stars text-xs">
                                     <i class="fa fa-star text-primary"></i>
                                     <i class="fa fa-star text-primary"></i>
@@ -1296,7 +1263,7 @@
                                             alt="product"></div>
                                 </a>
                                 <div class="product-hover-overlay">
-                                    <a class="text-dark text-sm" href="#">Add to cart</a>
+                                    <a class="text-dark text-sm add-to-cart" href="#">Add to cart</a>
                                     <div id="modal-item">
                                         <a class="text-dark text-hover-primary mr-2" href="#">
                                             <i class="fa-regular fa-heart"></i>
@@ -1310,8 +1277,9 @@
                             </div>
                             <div class="position-relative">
                                 <h3 class="text-base mb-1">
-                                    <a class="text-dark" href="#">Clock</a></h3><span
-                                    class="text-gray-500 text-sm">$40.00</span>
+                                    <a class="text-dark product-name" href="#">Origin clock</a>
+                                </h3>
+                                <span class="text-gray-500 text-sm product-price">$40.00</span>
                                 <div class="product-stars text-xs">
                                     <i class="fa fa-star text-primary"></i>
                                     <i class="fa fa-star text-primary"></i>
@@ -1333,7 +1301,7 @@
                                             alt="product"></div>
                                 </a>
                                 <div class="product-hover-overlay">
-                                    <a class="text-dark text-sm" href="#">Add to cart</a>
+                                    <a class="text-dark text-sm add-to-cart" href="#">Add to cart</a>
                                     <div id="modal-item">
                                         <a class="text-dark text-hover-primary mr-2" href="#">
                                             <i class="fa-regular fa-heart"></i>
@@ -1346,8 +1314,10 @@
                                 </div>
                             </div>
                             <div class="position-relative">
-                                <h3 class="text-base mb-1"><a class="text-dark" href="#">Clock</a></h3><span
-                                    class="text-gray-500 text-sm">$40.00</span>
+                                <h3 class="text-base mb-1">
+                                    <a class="text-dark product-name" href="#">Accessory box</a>
+                                </h3>
+                                <span class="text-gray-500 text-sm product-price">$40.00</span>
                                 <div class="product-stars text-xs">
                                     <i class="fa fa-star text-primary"></i>
                                     <i class="fa fa-star text-primary"></i>
@@ -1368,7 +1338,7 @@
                                             alt="product"></div>
                                 </a>
                                 <div class="product-hover-overlay">
-                                    <a class="text-dark text-sm" href="#">Add to cart</a>
+                                    <a class="text-dark text-sm add-to-cart" href="#">Add to cart</a>
                                     <div id="modal-item">
                                         <a class="text-dark text-hover-primary mr-2" href="#">
                                             <i class="fa-regular fa-heart"></i>
@@ -1381,8 +1351,10 @@
                                 </div>
                             </div>
                             <div class="position-relative">
-                                <h3 class="text-base mb-1"><a class="text-dark" href="#">Clock</a></h3><span
-                                    class="text-gray-500 text-sm">$40.00</span>
+                                <h3 class="text-base mb-1">
+                                    <a class="text-dark product-name" href="#">Beige</a>
+                                </h3>
+                                <span class="text-gray-500 text-sm product-price">$40.00</span>
                                 <div class="product-stars text-xs">
                                     <i class="fa fa-star text-primary"></i>
                                     <i class="fa fa-star text-primary"></i>
@@ -1407,6 +1379,12 @@
                     <div class="swiper-modal d-flex">
                         <div class="col-lg-6">
                             <div class="swiper-container gallery-top">
+                                <div class="product-badge badge">
+                                    Fresh
+                                </div>
+                                <div class="product-badge badge badge-dark">
+                                    Sale
+                                </div>
                                 <div class="swiper-wrapper">
                                     <div id="main-image" class="swiper-slide"
                                         style="background-image:url(https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-1-gray.jpg)">
@@ -1428,19 +1406,19 @@
                             </div>
                             <div class="swiper-container gallery-thumbs">
                                 <div class="swiper-wrapper">
-                                    <div id="thumb-image" class="swiper-slide"
+                                    <div id="thumb-image" class="swiper-slide img-fluid img-wrapper"
                                         style="background-image:url(https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-1-gray.jpg)">
                                     </div>
-                                    <div id="thumb-image" class="swiper-slide"
+                                    <div id="thumb-image" class="swiper-slide img-fluid img-wrapper"
                                         style="background-image:url(https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-2-gray.jpg)">
                                     </div>
-                                    <div id="thumb-image" class="swiper-slide"
+                                    <div id="thumb-image" class="swiper-slide img-fluid img-wrapper"
                                         style="background-image:url(https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-3-gray.jpg)">
                                     </div>
-                                    <div id="thumb-image" class="swiper-slide"
+                                    <div id="thumb-image" class="swiper-slide img-fluid img-wrapper"
                                         style="background-image:url(https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-4-gray.jpg)">
                                     </div>
-                                    <div id="thumb-image" class="swiper-slide"
+                                    <div id="thumb-image" class="swiper-slide img-fluid img-wrapper"
                                         style="background-image:url(https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-5-gray.jpg)">
                                     </div>
                                 </div>
@@ -1449,14 +1427,15 @@
                         <div class="col-lg-6 modal__index">
                             <div class="close-btn">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span>&times;</span>
                                 </button>
                             </div>
                             <div class="modal-wrapper">
                                 <h2 class="mb-4 mt-4">Push-up Jeans</h2>
                                 <div class="d-flex mb-4 price-modal">
-                                    <ul class="list-inline mb-2 mb-sm-0">
-                                        <li class="list-item h4 font-weight-light mb-0">$65.00</li>
-                                        <li class="list-item text-muted font-weight-light">
+                                    <ul class="list-inline mb-2">
+                                        <li class="price list-item h4">$65.00</li>
+                                        <li class="list-item text-muted">
                                             <del>$90.00</del>
                                         </li>
                                     </ul>
@@ -1765,7 +1744,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="link" href="#">
+                                    <a class="link" href="/blog.html">
                                         Our Blog
                                     </a>
                                 </li>
@@ -1865,12 +1844,12 @@
                                             </li>
                                             <li>
                                                 <a class="link" href="#">
-                                                   Our Blog
+                                                    Our Blog
                                                 </a>
                                             </li>
                                             <li>
                                                 <a class="link" href="#">
-                                                   Shop
+                                                    Shop
                                                 </a>
                                             </li>
                                         </ul>
@@ -1902,12 +1881,12 @@
                                             </li>
                                             <li>
                                                 <a class="link" href="#">
-                                                   Our Products
+                                                    Our Products
                                                 </a>
                                             </li>
                                             <li>
                                                 <a class="link" href="#">
-                                                   Checkouts
+                                                    Checkouts
                                                 </a>
                                             </li>
                                         </ul>
@@ -1939,12 +1918,12 @@
                                             </li>
                                             <li>
                                                 <a class="link" href="#">
-                                                   Our Products
+                                                    Our Products
                                                 </a>
                                             </li>
                                             <li>
                                                 <a class="link" href="#">
-                                                   Checkouts
+                                                    Checkouts
                                                 </a>
                                             </li>
                                         </ul>
@@ -2003,6 +1982,7 @@
     <script src="script/swiper.js"></script>
     <script src="script/dropdown.js"></script>
     <script src="script/countdown.js"></script>
+    <script src="script/cart.js"></script>
 </body>
 
 </html>

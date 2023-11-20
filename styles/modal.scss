@@ -11,6 +11,7 @@
 
         .type-btns {
             margin-bottom: 45px;
+
             button {
                 border: none;
                 color: #bcac76;
@@ -28,7 +29,7 @@
                 }
             }
 
-            button.active{
+            button.active {
                 background-color: #bcac76;
                 color: #000;
             }
@@ -60,7 +61,7 @@
             justify-content: space-between;
             border: 1px solid #dee2e6;
 
-            .sBtn-text{
+            .sBtn-text {
                 letter-spacing: .3em;
                 font-size: 13px;
                 text-transform: uppercase;
@@ -160,8 +161,29 @@
         }
 
         .close-btn {
-            text-align: right;
+            display: flex;
+            justify-content: end;
             width: 100%;
+
+            span{
+                font-size: 0;
+            }
+        }
+
+        // .btn-close {
+        //         display: block;
+        //         transform: rotate(180deg); 
+        // }
+
+        .btn-close {
+            display: block;
+            width: 20px; /* Örnek olarak genişlik */
+            height: 20px; /* Örnek olarak yükseklik */
+            transition: transform 0.3s ease; /* Dönme efektinin süresi ve geçiş türü */
+        }
+        
+        .btn-close:hover {
+            transform: rotate(180deg);
         }
 
         #main-image {
@@ -173,10 +195,38 @@
 
         #thumb-image {
             background-size: cover;
+            width: 99.75px !important;
         }
 
         .gallery-top {
+            position: relative;
             height: 550px;
+
+            .badge {
+                position: absolute;
+                top: 3%;
+                left: 17px;
+                right: 0;
+                width: 51px;
+                z-index: 111;
+                display: inline-block;
+                padding: 5px 5px;
+                color: #000;
+                background-color: #bcac76;
+            }
+
+            .badge-dark {
+                position: absolute;
+                top: 12%;
+                left: 17px;
+                right: 0;
+                width: 45px;
+                z-index: 111;
+                display: inline-block;
+                padding: 5px 5px;
+                color: #fff;
+                background-color: #000;
+            }
         }
 
         #thumb-image {
@@ -228,15 +278,16 @@
             }
         }
 
-        .cart-group{
-            .cart-item{
+        .cart-group {
+            .cart-item {
                 display: flex;
-                input{
+
+                input {
                     width: 15%;
                     text-align: center;
                 }
 
-                button{
+                button {
                     width: 85%;
                     border: none;
                     background: #000;
@@ -246,49 +297,54 @@
             }
         }
 
-        .social-category{
-            .wish-list{
-                i,a{
+        .social-category {
+            .wish-list {
+
+                i,
+                a {
                     cursor: pointer;
                     color: #bcac76 !important;
                 }
-                    &:hover{
-                        a{
-                            text-decoration: underline !important;
-                        }
-                        i{
-                            color: grey !important;
-                        }
+
+                &:hover {
+                    a {
+                        text-decoration: underline !important;
                     }
+
+                    i {
+                        color: grey !important;
+                    }
+                }
             }
 
-            .text-end{
-                i{
+            .text-end {
+                i {
                     cursor: pointer;
                     transition: .3s ease-in-out;
-                    &:hover{
+
+                    &:hover {
                         color: #bcac76;
                     }
                 }
             }
         }
 
-        .bottom-wrapper{
+        .bottom-wrapper {
             display: flex;
             flex-direction: column;
             margin-top: 55px;
 
-            strong{
+            strong {
                 font-size: 16px;
             }
 
-            a{
+            a {
                 color: #60686f !important;
                 font-size: 16px;
                 font-weight: normal;
                 cursor: pointer;
 
-                &:hover{
+                &:hover {
                     text-decoration: underline !important;
                 }
             }
@@ -298,121 +354,181 @@
 }
 
 @media screen and (max-width: 576px) {
-      // modal new arrival
+    // modal new arrival
 
-  #exampleModal {
-    .gallery-top {
-      height: auto !important;
+    #exampleModal {
+        .gallery-top {
+            height: auto !important;
+        }
+
+        .modal-body {
+            padding: 10px 8px;
+        }
+
+        .gallery-thumbs {
+            padding-top: 10px;
+            justify-content: center;
+        }
+
+        .modal-content {
+            height: 200vh !important;
+        }
+
+        .modal-dialog {
+            width: 95% !important;
+        }
+
+        .swiper-modal {
+            flex-direction: column;
+            height: 100vh !important;
+        }
+
+        #main-image {
+            width: 100% !important;
+            height: 350px !important;
+            margin-right: 10px !important;
+        }
+
+        .modal-body {
+            .modal-wrapper {
+                padding: 0 1%;
+            }
+        }
+
+        #thumb-image {
+            max-width: 18.8% !important;
+            height: 76px !important;
+        }
+
+        .modal__index {
+            position: relative;
+
+            .close-btn {
+                position: absolute;
+                top: -65%;
+                right: 4%;
+            }
+        }
     }
-
-    .modal-body {
-      padding: 10px 8px;
-    }
-
-    .gallery-thumbs {
-      padding-top: 10px;
-      justify-content: center;
-    }
-
-    .modal-content {
-      height: 200vh !important;
-    }
-
-    .modal-dialog {
-      width: 95% !important;
-    }
-
-    .swiper-modal {
-      flex-direction: column;
-      height: 100vh !important;
-    }
-
-    #main-image {
-      width: 98% !important;
-      height: 350px !important;
-      margin-right: 19px !important;
-    }
-
-    .modal-body {
-      .modal-wrapper {
-        padding: 0 1%;
-      }
-    }
-
-    #thumb-image {
-      max-width: 17.8% !important;
-      height: 76px !important;
-    }
-
-    .modal__index {
-      position: relative;
-
-      .close-btn {
-        position: absolute;
-        top: -67%;
-        right: 4%;
-      }
-    }
-  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    // modal new arrival
 
-#exampleModal {
-    height: 100vh !important;
+    #exampleModal {
+        height: 100vh !important;
 
-  .gallery-top {
-    height: auto !important;
-  }
+        .gallery-top {
+            height: auto !important;
+        }
 
-  .modal-body {
-    padding: 10px 8px;
-  }
+        .modal-body {
+            padding: 10px 8px;
+        }
 
-  .gallery-thumbs {
-    padding-top: 10px;
-    justify-content: center;
-  }
+        .gallery-thumbs {
+            padding-top: 10px;
+            justify-content: center;
+        }
 
-  .modal-content {
-    height: 200vh !important;
-  }
+        .modal-content {
+            height: 200vh !important;
+        }
 
-  .modal-dialog {
-    width: 95% !important;
-  }
+        .modal-dialog {
+            width: 95% !important;
+        }
 
-  .swiper-modal {
-    flex-direction: column;
-    height: 100vh !important;
-  }
+        .swiper-modal {
+            flex-direction: column;
+            height: 100vh !important;
+        }
 
-  #main-image {
-    width: 100% !important;
-    height: 566px !important;
-    margin-right: 10px !important;
-  }
+        #main-image {
+            width: 100% !important;
+            height: 566px !important;
+            margin-right: 10px !important;
+        }
 
-  .modal-body {
-    .modal-wrapper {
-      padding: 0 1%;
+        .modal-body {
+            .modal-wrapper {
+                padding: 0 1%;
+            }
+        }
+
+        #thumb-image {
+            max-width: 18.8% !important;
+            height: 76px !important;
+            width: 133.75px !important;
+        }
+
+        .modal__index {
+            position: relative;
+
+            .close-btn {
+                position: absolute;
+                top: -102%;
+                right: 2%;
+            }
+        }
     }
-  }
-
-  #thumb-image {
-    max-width: 18.8% !important;
-    height: 76px !important;
-  }
-
-  .modal__index {
-    position: relative;
-
-    .close-btn {
-      position: absolute;
-      top: -106%;
-      right: 2%;
-    }
-  }
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    #exampleModal {
+        height: 100vh !important;
+
+        .gallery-top {
+            height: auto !important;
+        }
+
+        .modal-body {
+            padding: 10px 8px;
+        }
+
+        .gallery-thumbs {
+            padding-top: 10px;
+            justify-content: center;
+        }
+
+        .modal-content {
+            height: 208vh !important;
+        }
+
+        .modal-dialog {
+            width: 56% !important;
+        }
+
+        .swiper-modal {
+            flex-direction: column;
+            height: 100vh !important;
+        }
+
+        #main-image {
+            width: 100% !important;
+            height: 566px !important;
+            margin-right: 10px !important;
+        }
+
+        .modal-body {
+            .modal-wrapper {
+                padding: 0 1%;
+            }
+        }
+
+        #thumb-image {
+            max-width: 18.8% !important;
+            height: 76px !important;
+        }
+
+        .modal__index {
+            position: relative;
+
+            .close-btn {
+                position: absolute;
+                top: -101%;
+                right: 2%;
+            }
+        }
+    }
 }
